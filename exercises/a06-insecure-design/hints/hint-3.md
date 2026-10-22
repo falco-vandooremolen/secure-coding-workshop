@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): let the server own the facts. Look the product up in the database and take the price from there, validate what the client is allowed to choose with explicit bounds, calculate derived values yourself, and put a limit on how frequently the route can be called. Validating that a price "is numeric" is not the same as removing the client's say over it.
