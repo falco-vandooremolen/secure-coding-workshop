@@ -1,0 +1,1 @@
+Hint 1 (where to look): in each controller, find the first line that touches the incoming data and ask where that data came from and what proves it. Pay attention to the function used to turn the preferences blob back into a PHP value, and to what the webhook route requires from its caller.

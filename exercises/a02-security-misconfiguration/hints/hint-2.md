@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): this is misconfiguration, not a coding bug. A setting meant for development is active in production, a permission is wide open, and a protective layer (response headers) is absent entirely.

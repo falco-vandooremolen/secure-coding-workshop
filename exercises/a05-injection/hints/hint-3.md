@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): keep data and instructions separate. Send values to the database as bound parameters (the query builder does this for you), and use the template syntax that escapes output. Validate the input shape as an extra layer, not as the main defence.

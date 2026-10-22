@@ -1,0 +1,1 @@
+Hint 1 (where to look): there are two files to read, and one piece is missing from `code/` altogether. Compare the values in the environment file with what `APP_ENV=production` promises, and read every line of the CORS config.

@@ -1,0 +1,17 @@
+{
+    "name": "example/intranet",
+    "description": "Reference solution for the A03 workshop exercise.",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.0",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "config": {
+        "allow-plugins": {}
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan package:discover --ansi"
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+Hint 1 (where to look): read the `store` method top to bottom and ask what happens on the hundredth wrong password, and what happens to the session at the moment the user is signed in. Also check what the route in front of it does and does not do.

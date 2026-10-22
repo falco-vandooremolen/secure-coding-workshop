@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): use bounded version constraints and rely on a committed lock file, remove the package you cannot justify, and keep scripts limited to local commands that ship with the project. Audit dependencies automatically in CI.

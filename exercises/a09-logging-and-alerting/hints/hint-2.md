@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): there are three flaws at once: sensitive data is written to the log, security-relevant events (failed logins, denied access) are not recorded, and nothing turns a pattern of failures into something a human would notice. This is a logging and alerting failure, in both directions: too much of the wrong data and too little of the right data.

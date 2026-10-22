@@ -1,0 +1,1 @@
+Hint 1 (where to look): read every logging call, and every place where something important happens without a logging call. Look at exactly which values are passed to the logger, and at what the failure and denial branches do.

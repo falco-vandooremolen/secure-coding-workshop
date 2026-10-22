@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): the system fails open (an error is treated as permission) and it discloses internals (messages and traces) to whoever triggers the error. Both are mishandled exceptional conditions: the unhappy path was never designed.

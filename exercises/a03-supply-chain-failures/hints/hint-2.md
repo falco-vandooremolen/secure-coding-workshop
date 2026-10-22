@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): this is supply chain risk. Loose version constraints let any future release in, one name is suspiciously close to a well-known package (typosquatting), and an install-time script runs whatever a remote server returns.

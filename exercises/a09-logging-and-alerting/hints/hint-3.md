@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): log events with a stable name and a small set of useful fields (who, from where, what), on a dedicated security channel, and never log credentials. Record the denials before they are returned. Count failures per source over a time window and emit a higher severity entry when a threshold is crossed, so the alerting tool has something to match on.

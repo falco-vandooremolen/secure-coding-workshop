@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): the application trusts the client with decisions that belong to the business, such as what something costs and how many a person may buy, and there is no limit on how often the flow can be used. This is a design flaw (missing business rules and abuse-case thinking), not a coding slip that a library fixes.

