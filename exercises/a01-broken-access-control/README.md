@@ -23,7 +23,7 @@ Quick, about 5 minutes.
 
 ## Stretch
 
-The app also has a `/documents` overview page that lists documents. Make sure it shows only the signed-in user's own documents.
+Imagine the app also gets a page that lists documents. Describe, in one sentence, how you would make sure it shows only the signed-in user's own documents.
 
 ## Files
 
