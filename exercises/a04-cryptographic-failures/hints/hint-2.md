@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): passwords are protected with a fast, general-purpose digest that can be reversed by guessing at enormous speed, and secrets are written straight into code that is stored in version control.

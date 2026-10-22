@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): use the framework's purpose-built password hashing, and move every secret out of the repository into environment configuration that is read at runtime. Also think about what to do with secrets that were already committed.
