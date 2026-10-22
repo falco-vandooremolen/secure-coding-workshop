@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): when a security decision cannot be made, choose the safe default and say so in the log, with context that identifies what failed but contains no secrets. For responses, send users a short generic message, keep the details in the log, and take care not to change the status codes that other parts of the application rely on.
