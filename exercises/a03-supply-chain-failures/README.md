@@ -16,9 +16,9 @@ Medium, about 8 minutes.
 
 ## Fix checklist
 
-- [ ] No dependency uses a version constraint that accepts any release.
+- [ ] No dependency can silently pull in an unreviewed major release.
 - [ ] Every package in `require` is one the project really means to use; nothing is there by accident or by lookalike name.
-- [ ] No script downloads and executes code from the network.
+- [ ] No install step runs code that is fetched from the network.
 - [ ] You can state how the exact installed versions are recorded and reviewed in your own project (the lock file is not part of this exercise).
 
 ## Stretch

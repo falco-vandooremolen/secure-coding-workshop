@@ -15,6 +15,7 @@ OWASP Top 10:2025 A08 Software or Data Integrity Failures (insecure deserializat
 - Comparing signatures with `==` or `===` instead of `hash_equals()`, which allows timing attacks.
 - Computing the HMAC over the decoded payload instead of the raw body, so re-encoding changes the bytes and the check breaks or can be bypassed.
 - Validating the payload but never verifying who sent it.
+- Forgetting the misconfiguration case: if the webhook secret is unset (empty string), `hash_hmac` still works and the signature is trivially forgeable. The reference solution fails closed (logs and returns 500) when the secret is empty; ask what happens in a fresh environment where the variable was never set.
 
 ## Discussion questions
 

@@ -16,15 +16,15 @@ Stretch, about 10 minutes.
 
 ## Fix checklist
 
-- [ ] No `unserialize()` is called on data that comes from a request.
-- [ ] Preferences are validated structured data (an array or JSON with known keys and values).
-- [ ] The webhook signature is verified with an HMAC over the raw request body before the payload is used.
-- [ ] The signature is compared with a timing-safe function.
-- [ ] The webhook payload is validated after the signature has been verified.
+- [ ] The server never rebuilds objects from data that comes from a request.
+- [ ] Preferences are validated structured data with known keys and values.
+- [ ] The webhook only acts on messages that are proven to come from the payment provider and to be unmodified.
+- [ ] That proof is checked in a way that does not leak information through response timing.
+- [ ] The webhook content is validated only after its origin has been proven.
 
 ## Stretch
 
-Add replay protection: a signed timestamp header, and reject messages older than five minutes. Describe what an attacker could still do if only the signature were checked.
+Add replay protection so a captured valid message cannot be resent later. Describe what an attacker could still do if only the signature were checked.
 
 ## Files
 

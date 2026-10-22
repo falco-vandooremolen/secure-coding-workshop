@@ -16,9 +16,9 @@ Medium, about 8 minutes.
 
 ## Fix checklist
 
-- [ ] The session identifier is regenerated after a successful login.
-- [ ] Failed attempts are counted and limited per account and IP address combination.
-- [ ] The limiter is cleared after a successful login.
+- [ ] A session cookie that existed before login is useless after login.
+- [ ] Repeated failed attempts are slowed down per account and client address combination.
+- [ ] A successful login does not leave a penalty behind for the real user.
 - [ ] The error message does not reveal whether the email address exists.
 
 ## Stretch
