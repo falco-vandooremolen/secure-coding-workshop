@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): the application trusts data whose integrity and origin it never checks. One place rebuilds objects from attacker-controlled bytes (insecure deserialization, which can lead to PHP object injection), and the other accepts a state change from anyone who knows the URL (no message authentication).
