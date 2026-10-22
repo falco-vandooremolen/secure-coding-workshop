@@ -1,0 +1,1 @@
+Hint 1 (where to look): follow the value of `q` from the request to the database call, and follow `$comment->body` from the database to the page. Look closely at how each is written into its destination.

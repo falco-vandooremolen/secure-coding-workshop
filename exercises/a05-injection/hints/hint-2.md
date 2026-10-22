@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): untrusted text is mixed into a language (SQL in one place, HTML in the other) and the receiver cannot tell data from instructions. This is injection: SQL injection in the controller and cross-site scripting in the view.
