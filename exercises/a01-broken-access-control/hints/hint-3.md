@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): decide per record who may act on it, and enforce that decision on the server. Laravel offers authorisation policies and gates for this, or you can limit the query to records owned by the current user. Make sure both view and delete are covered.
