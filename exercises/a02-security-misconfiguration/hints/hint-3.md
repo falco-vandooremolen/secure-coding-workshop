@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): switch the development-only setting off, replace each wildcard with an explicit allow-list of what the app really needs, and write a small middleware that adds standard protective headers to every response. Then register it in the application bootstrap file.

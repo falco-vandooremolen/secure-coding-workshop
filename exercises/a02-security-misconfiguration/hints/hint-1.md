@@ -1,0 +1,1 @@
+Hint 1 (where to look): there are two files to read, and one file that is missing. Compare the values in the environment file with what the file name `APP_ENV` promises, and read every line of the CORS config.
