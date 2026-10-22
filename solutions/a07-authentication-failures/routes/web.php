@@ -4,4 +4,4 @@ use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/login', [LoginController::class, 'store'])
-    ->middleware('throttle:10,1');
+    ->middleware('throttle:login');

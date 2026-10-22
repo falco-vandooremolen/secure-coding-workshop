@@ -5,6 +5,6 @@
 - `EnsureIsAdmin` logs `access.denied` with the user id (or null), IP and path before it aborts with 403.
 - `app/Listeners/AlertOnRepeatedFailures.php` listens for `Illuminate\Auth\Events\Failed`, counts failures per IP in the cache with a 10 minute window and writes a `critical` entry `login.bruteforce_suspected` from the fifth failure. Register it (Laravel discovers listeners in `app/Listeners` by their type-hinted event) or add it explicitly in a service provider.
 - Using the email as a context field (not inside the message string) keeps structured logs parseable. Consider stripping newlines from user-supplied values to prevent log injection.
-- Verify the Laravel 13 logging channel and event listener registration in the current documentation before reusing this.
+- Checked against the Laravel 13.x docs and skeleton: `Log::channel('name')` and the `daily` driver (logging docs; the 13.x skeleton uses `max_files` for retention), listener auto-discovery by the type-hinted `handle()` method in `app/Listeners` (events docs), and `Illuminate\Auth\Events\Failed` in the authentication events list. In production run `php artisan event:cache` (or `optimize`) so discovery is cached.
 
 Stretch: for example notify the on-call engineer within 15 minutes by chat and email, keep security logs for 12 months in a read-restricted store.
