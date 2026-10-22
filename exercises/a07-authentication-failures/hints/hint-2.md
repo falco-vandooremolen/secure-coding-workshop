@@ -1,0 +1,1 @@
+Hint 2 (what class of problem): this is a combination of missing brute-force protection (credential stuffing and password guessing are free) and session fixation (an identifier that existed before authentication survives it). Both are authentication failures even though the password check itself is correct.

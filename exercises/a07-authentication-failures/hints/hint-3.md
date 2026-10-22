@@ -1,0 +1,1 @@
+Hint 3 (what kind of fix): use the framework's rate limiter with a key that combines the account and the client address, count failures and reset the counter on success. Let the framework's own authentication helper sign the user in, and give the session a fresh identifier right after authentication. Keep the response identical for unknown accounts and wrong passwords.
